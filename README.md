@@ -1,4 +1,7 @@
 # NbX
+
+---
+
 This repository contains the NbX models for the re-ranking of nanobody–antigen binding poses.
 
 Tam, C.; Kumar, A.; Zhang, K.Y.J. NbX: Machine Learning-Guided Re-Ranking of Nanobody–Antigen Binding Poses. Pharmaceuticals 2021, 14, 968. https://doi.org/10.3390/ph14100968
@@ -7,7 +10,7 @@ Tam, C.; Kumar, A.; Zhang, K.Y.J. NbX: Machine Learning-Guided Re-Ranking of Nan
 
 # How to run NbX
 
-## Step 1: Install pre-requisites
+## Step 1 : install pre-requisites
 
 PyRosetta (https://www.pyrosetta.org/downloads)
 
@@ -27,7 +30,7 @@ Rosetta (optional, https://new.rosettacommons.org/demos/latest/tutorials/install
 
 `pip install dill==0.3.5.1`
 
-## Step 2: Change paths
+## Step 2 : change paths
 
 Change the following paths inside `NbX_feature_prep.py`
 
@@ -38,7 +41,7 @@ Change the following paths inside `NbX_feature_prep.py`
 `path_to_dockq = "/data/cltam/script/DockQ/" (optional)`
 
 
-## Step 3: Renumber nanobody
+## Step 3 : renumber nanobody
 Before any docking, please renumber your nanobody with PyIgClassify (http://dunbrack2.fccc.edu/pyigclassify/)
 
 If your Nb (or Nb-Ag) structure is confidential and you don't want to submit to a webserver: 
@@ -46,14 +49,14 @@ If your Nb (or Nb-Ag) structure is confidential and you don't want to submit to 
 modify the CDRs start and end residue numbers (search `"CDR1_start_residue"`) inside `NbX_feature_prep.py`.
 
 
-## Step 4: change directory, copy
+## Step 4 : change directory, copy
 
 `cd run_NbX`
 
 `cp -r ../model ../NbX_feature_prep.py ../aaDescriptors.csv ../NbX_predict.py ./`
 
 
-## Step 5 : Feature prep
+## Step 5 : feature prep
 
 ### (option 1,  without DockQ)
 
@@ -64,14 +67,14 @@ modify the CDRs start and end residue numbers (search `"CDR1_start_residue"`) in
 `python NbX_feature_prep.py --antigen_chain A --antibody_chain H --native 6oq8_complex.pdb`
 
 
-## Step 6: Predict
+## Step 6 : predict
 
 `python NbX_predict.py`
 
 
-## Step 7: Analyse Results
+## Step 7 : analyse results
 
-**Descendingly sort the `mean_predicted_CAPRI_binary_proba` in `NbX_prediction.csv`, we get the following results
+**Descendingly sort the `mean_predicted_CAPRI_binary_proba` in `NbX_prediction.csv`**, we get the following results
 
 ![投影片1](https://user-images.githubusercontent.com/51283097/174423865-865a8b73-d382-4080-b080-8fa49e5b2a44.PNG)
 
