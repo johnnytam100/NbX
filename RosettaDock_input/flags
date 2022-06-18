@@ -1,0 +1,11 @@
+-l pdb_list
+-ex1 
+-ex2 
+-extrachi_cutoff 5 
+-ignore_unrecognized_res 
+-run:constant_seed 
+-jd2:ntrials 10 
+-parser:protocol RosettaDock_low-resolution_and_full-atom.xml 
+-docking:no_filters
+-out:path:all ./
+-overwrite
