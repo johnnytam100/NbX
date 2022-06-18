@@ -69,7 +69,7 @@ modify the CDR start and end residue number (search `"CDR1_start_residue"`) insi
 `python NbX_predict.py`
 
 
-# Step 7: Analyse Results
+## Step 7: Analyse Results
 
 **Descendingly sort the `mean_predicted_CAPRI_binary_proba` in `NbX_prediction.csv`, we get the following results
 
@@ -88,15 +88,19 @@ To mimic the NbX benchmark setting, you can perform RosettaDock refinement of yo
 
 1) **"Garbage in, garbage out". NbX is not a docking but a re-ranking method, which completely depends on the quality of the input Nb-Ag complex structures to suggest native-like solutions.**
 
-    *Take action: Use a docking algorithm that is well-tested on predicting native-like Nb-Ab complex structures, no matter how the docking method ranks them.* 
+    **Take action:** 
+    
+    *Use a docking algorithm that is well-tested on predicting native-like Nb-Ab complex structures, no matter how the docking method ranks them.* 
 
     *We used Nb-Ag complex structures from ClusPro -> RosettaDock full-atom refinement (or equivalent/ better docking methods) to benchmark NbX.*
 
 2) **NbX was largely unable to model a single classification threshold that can generally applied to all tested Nb-Ag complexes to distinguish non-native-like (0) or native-like (1) Nb-Ag complex structures.**
 
 
-    *Take action: Descendingly sort the `mean_predicted_CAPRI_binary_proba`* 
-    *(i.e. the mean native-like probablilty of the 5-fold validated NbX models) in the `NbX_prediction.csv`. This is our NbX re-rank for you.*
+    **Take action:**
+    
+    *Descendingly sort the `mean_predicted_CAPRI_binary_proba` in `NbX_prediction.csv` * 
+    *(i.e. the mean native-like probablilty of the 5-fold validated NbX models). This is our NbX re-rank for you.*
     
     *Do consider top ranks as more probable native-like Nb-Ag complex structures compared to the lower ranks.*
     
