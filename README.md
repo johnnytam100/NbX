@@ -84,6 +84,7 @@ Descendingly sort the `mean_predicted_CAPRI_binary_proba` in `NbX_prediction.csv
 To mimic the NbX benchmark setting, you can perform RosettaDock refinement of your Nb-Ag complex structures before feature prediction.
 
 `cd run_NbX`
+
 `sh RosettaDock.sh`
 
 ---
