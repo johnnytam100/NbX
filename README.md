@@ -68,9 +68,10 @@ modify the CDR start and end residue number (search `"CDR1_start_residue"`) insi
 
 `python NbX_predict.py`
 
----
 
-# Analyse
+# Analyse Results
+
+Descendingly sort the "mean_predicted_CAPRI_binary_proba", we get the following results
 
 ![投影片1](https://user-images.githubusercontent.com/51283097/174423865-865a8b73-d382-4080-b080-8fa49e5b2a44.PNG)
 
@@ -78,12 +79,10 @@ modify the CDR start and end residue number (search `"CDR1_start_residue"`) insi
 
 # RosettaDock (optional)
 
-To mimic the NbX benchmark setting, you can perform RosettaDock refinement of your Nb-Ag complex structures before feature prediction
+To mimic the NbX benchmark setting, you can perform RosettaDock refinement of your Nb-Ag complex structures before feature prediction.
 
 `cd run_NbX`
 `sh RosettaDock.sh`
-
----
 
 # Limitations of NbX
 
