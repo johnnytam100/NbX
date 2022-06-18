@@ -27,7 +27,7 @@ Rosetta (optional, https://new.rosettacommons.org/demos/latest/tutorials/install
 
 `pip install dill==0.3.5.1`
 
-## Step2: Change paths
+## Step 2: Change paths
 
 Change the following paths inside `NbX_feature_prep.py`
 
@@ -38,7 +38,7 @@ Change the following paths inside `NbX_feature_prep.py`
 `path_to_dockq = "/data/cltam/script/DockQ/" (optional)`
 
 
-## Step3: Renumber nanobody
+## Step 3: Renumber nanobody
 Before any docking, please renumber your nanobody with PyIgClassify (http://dunbrack2.fccc.edu/pyigclassify/)
 
 If your Nb (or Nb-Ag) structure is confidential and you don't want to submit to a webserver: 
@@ -46,14 +46,14 @@ If your Nb (or Nb-Ag) structure is confidential and you don't want to submit to 
 modify the CDR start and end residue number (search `"CDR1_start_residue"`) inside `NbX_feature_prep.py`.
 
 
-## Step4: change directory, copy
+## Step 4: change directory, copy
 
 `cd run_NbX`
 
 `cp -r ../model ../NbX_feature_prep.py ../aaDescriptors.csv ../NbX_predict.py ./`
 
 
-## Step5 : Feature prep
+## Step 5 : Feature prep
 
 ### (option 1,  without DockQ)
 
@@ -64,14 +64,14 @@ modify the CDR start and end residue number (search `"CDR1_start_residue"`) insi
 `python NbX_feature_prep.py --antigen_chain A --antibody_chain H --native 6oq8_complex.pdb`
 
 
-## Step6: Predict
+## Step 6: Predict
 
 `python NbX_predict.py`
 
 
-# Analyse Results
+# Step 7: Analyse Results
 
-Descendingly sort the "mean_predicted_CAPRI_binary_proba", we get the following results
+**Descendingly sort the `mean_predicted_CAPRI_binary_proba` in `NbX_prediction.csv`, we get the following results
 
 ![投影片1](https://user-images.githubusercontent.com/51283097/174423865-865a8b73-d382-4080-b080-8fa49e5b2a44.PNG)
 
@@ -95,8 +95,8 @@ To mimic the NbX benchmark setting, you can perform RosettaDock refinement of yo
 2) **NbX was largely unable to model a single classification threshold that can generally applied to all tested Nb-Ag complexes to distinguish non-native-like (0) or native-like (1) Nb-Ag complex structures.**
 
 
-    *Take action: Descendingly sort the "mean_predicted_CAPRI_binary_proba"* 
-    *(i.e. the mean native-like probablilty of the 5-fold validated NbX models) in the NbX_prediction.csv. This is our NbX re-rank for you.*
+    *Take action: Descendingly sort the `mean_predicted_CAPRI_binary_proba`* 
+    *(i.e. the mean native-like probablilty of the 5-fold validated NbX models) in the `NbX_prediction.csv`. This is our NbX re-rank for you.*
     
     *Do consider top ranks as more probable native-like Nb-Ag complex structures compared to the lower ranks.*
     
