@@ -114,7 +114,7 @@ step 2 : `sh RosettaDock.sh`
 
     * Avoid comparing the absolute values of the probablity among unrelated Nb-Ag pairs.
 
-    * 202206 Update: Use the following distributions of `mean_predicted_CAPRI_binary_proba` among 1) crystal 2) native-like and 3) non-native like Nb-Ag complex      structures to guide your selection of native-like Nb-Ag complex structures.
+    * 202206 Update: Use the following distributions of `mean_predicted_CAPRI_binary_proba` among 1) crystal 2) native-like and 3) non-native-like Nb-Ag complex      structures to guide your selection of native-like Nb-Ag complex structures.
 
    ![image](https://user-images.githubusercontent.com/51283097/174424674-a5d30058-64aa-460d-b2a5-e6346901170d.png)
 
