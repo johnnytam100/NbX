@@ -72,7 +72,7 @@ modify the CDRs start and end residue numbers (search `"CDR1_start_residue"`) in
 `python NbX_predict.py`
 
 
-## Step 7 : analyse results
+## Step 7 : analyze results
 
 **Important concept in NbX re-ranking:**
 
