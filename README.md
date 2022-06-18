@@ -44,7 +44,7 @@ If your Nb (or Nb-Ag) structure is confidential and you don't want to submit to 
 modify the CDR start and end residue number (search `"CDR1_start_residue"`) inside `NbX_feature_prep.py`.
 
 
-## Step4: change director, copy
+## Step4: change directory, copy
 
 `cd run_NbX`
 
