@@ -43,7 +43,7 @@ Before any docking, please renumber your nanobody with PyIgClassify (http://dunb
 
 If your Nb (or Nb-Ag) structure is confidential and you don't want to submit to a webserver: 
 
-modify the CDR start and end residue number (search `"CDR1_start_residue"`) inside `NbX_feature_prep.py`.
+modify the CDRs start and end residue numbers (search `"CDR1_start_residue"`) inside `NbX_feature_prep.py`.
 
 
 ## Step 4: change directory, copy
@@ -90,22 +90,21 @@ To mimic the NbX benchmark setting, you can perform RosettaDock refinement of yo
 
     **Take action:** 
     
-    *Use a docking algorithm that is well-tested on predicting native-like Nb-Ab complex structures, no matter how the docking method ranks them.* 
+    * Use a docking algorithm that is well-tested on predicting native-like Nb-Ab complex structures, no matter how the docking method ranks them. 
 
-    *We used Nb-Ag complex structures from ClusPro -> RosettaDock full-atom refinement (or equivalent/ better docking methods) to benchmark NbX.*
+    * We used Nb-Ag complex structures from ClusPro -> RosettaDock full-atom refinement (or equivalent/ better docking methods) to benchmark NbX.
 
 2) **NbX was largely unable to model a single classification threshold that can generally applied to all tested Nb-Ag complexes to distinguish non-native-like (0) or native-like (1) Nb-Ag complex structures.**
 
 
-    **Take action:**
+    **Take action:** 
     
-    *Descendingly sort the `mean_predicted_CAPRI_binary_proba` in `NbX_prediction.csv` * 
-    *(i.e. the mean native-like probablilty of the 5-fold validated NbX models). This is our NbX re-rank for you.*
-    
-    *Do consider top ranks as more probable native-like Nb-Ag complex structures compared to the lower ranks.*
-    
-    *Avoid using a single classification threshold of the absolute value of the probablity as non-native-like (0) or native-like (1) among unrelated Nb-Ag pairs.*
-    
-    *Avoid comparing the absolute values of the probablity among unrelated Nb-Ag pairs.*
-    
-    *202206 Update: Use the following distributions of "mean_predicted_CAPRI_binary_proba" among 1) crystal 2) native-like and 3) non-native like Nb-Ag complex      structures to guide your selection of native-like Nb-Ag complex structures.*
+    * Descendingly sort the `mean_predicted_CAPRI_binary_proba` in `NbX_prediction.csv` (i.e. the mean native-like probablilty of the 5-fold validated NbX models). This is our NbX re-rank for you.
+
+    * Do consider top ranks as more probable native-like Nb-Ag complex structures compared to the lower ranks.
+
+    * Avoid using a single classification threshold of the absolute value of the probablity as non-native-like (0) or native-like (1) among unrelated Nb-Ag pairs.
+
+    * Avoid comparing the absolute values of the probablity among unrelated Nb-Ag pairs.
+
+    * 202206 Update: Use the following distributions of "mean_predicted_CAPRI_binary_proba" among 1) crystal 2) native-like and 3) non-native like Nb-Ag complex      structures to guide your selection of native-like Nb-Ag complex structures.
