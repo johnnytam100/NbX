@@ -1,5 +1,5 @@
 # NbX
-This repository contains the NbX models for the re-Ranking of nanobody–antigen binding poses.
+This repository contains the NbX models for the re-ranking of nanobody–antigen binding poses.
 
 Tam, C.; Kumar, A.; Zhang, K.Y.J. NbX: Machine Learning-Guided Re-Ranking of Nanobody–Antigen Binding Poses. Pharmaceuticals 2021, 14, 968. https://doi.org/10.3390/ph14100968
 
