@@ -3,6 +3,8 @@ This repository contains the NbX models for the re-ranking of nanobody–antigen
 
 Tam, C.; Kumar, A.; Zhang, K.Y.J. NbX: Machine Learning-Guided Re-Ranking of Nanobody–Antigen Binding Poses. Pharmaceuticals 2021, 14, 968. https://doi.org/10.3390/ph14100968
 
+---
+
 # How to run NbX
 
 ## Step 1: Install pre-requisites
@@ -66,11 +68,13 @@ modify the CDR start and end residue number (search `"CDR1_start_residue"`) insi
 
 `python NbX_predict.py`
 
+---
 
 # Analyse
 
 ![投影片1](https://user-images.githubusercontent.com/51283097/174423865-865a8b73-d382-4080-b080-8fa49e5b2a44.PNG)
 
+---
 
 # RosettaDock (optional)
 
@@ -79,6 +83,7 @@ To mimic the NbX benchmark setting, you can perform RosettaDock refinement of yo
 `cd run_NbX`
 `sh RosettaDock.sh`
 
+---
 
 # Limitations of NbX
 
@@ -91,8 +96,8 @@ To mimic the NbX benchmark setting, you can perform RosettaDock refinement of yo
 2) **NbX was largely unable to model a single classification threshold that can generally applied to all tested Nb-Ag complexes to distinguish non-native-like (0) or native-like (1) Nb-Ag complex structures.**
 
 
-    *Take action: Descendingly sort the "mean_predicted_CAPRI_binary_proba" 
-    (i.e. the mean native-like probablilty of the 5-fold validated NbX models) in the NbX_prediction.csv. This is our NbX re-rank for you.
+    *Take action: Descendingly sort the "mean_predicted_CAPRI_binary_proba"* 
+    *(i.e. the mean native-like probablilty of the 5-fold validated NbX models) in the NbX_prediction.csv. This is our NbX re-rank for you.*
     
     *Do consider top ranks as more probable native-like Nb-Ag complex structures compared to the lower ranks.*
     
