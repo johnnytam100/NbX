@@ -38,7 +38,7 @@ Change the following paths inside `NbX_feature_prep.py`
 
 `path_to_foldx = "/data/cltam/script/FoldX/foldx_20221231"`
 
-`path_to_dockq = "/data/cltam/script/DockQ/"` (optional, be careful not to omit the tailing `/`)
+`path_to_dockq = "/data/cltam/script/DockQ/"` (optional, be careful not to omit the last `/` in this path)
 
 
 ## Step 3 : renumber nanobody
