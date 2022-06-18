@@ -74,7 +74,7 @@ modify the CDRs start and end residue numbers (search `"CDR1_start_residue"`) in
 
 **Important concept in NbX re-ranking:**
 
-Descendingly sort the `mean_predicted_CAPRI_binary_proba` in `NbX_prediction.csv`, we get the following results
+**Descendingly sort the `mean_predicted_CAPRI_binary_proba` in `NbX_prediction.csv`**, we get the following results
 
 ![投影片1](https://user-images.githubusercontent.com/51283097/174423865-865a8b73-d382-4080-b080-8fa49e5b2a44.PNG)
 
