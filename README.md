@@ -38,7 +38,7 @@ Change the following paths inside `NbX_feature_prep.py`
 
 `path_to_foldx = "/data/cltam/script/FoldX/foldx_20221231"`
 
-`path_to_dockq = "/data/cltam/script/DockQ/" (optional)`
+`path_to_dockq = "/data/cltam/script/DockQ/" (optional, be careful not to omit the tailing `/`)`
 
 
 ## Step 3 : renumber nanobody
@@ -85,9 +85,9 @@ Descendingly sort the `mean_predicted_CAPRI_binary_proba` in `NbX_prediction.csv
 
 To mimic the NbX benchmark setting, you can perform RosettaDock refinement of your Nb-Ag complex structures before feature prediction.
 
-`cd run_NbX`
+step 1 : change `ROSETTA_PATH` in `RosettaDock.sh` to your Rosetta path.
 
-`sh RosettaDock.sh`
+step 2 : `sh RosettaDock.sh`
 
 ---
 
