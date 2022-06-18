@@ -96,7 +96,7 @@ To mimic the NbX benchmark setting, you can perform RosettaDock refinement of yo
     
     * Use a docking algorithm that is well-tested on predicting native-like Nb-Ab complex structures, no matter how the docking method ranks them. 
 
-    * We used Nb-Ag complex structures from ClusPro -> RosettaDock full-atom refinement to benchmark NbX. Please use equivalent or better docking methods
+    * We used Nb-Ag complex structures from ClusPro -> RosettaDock full-atom refinement to benchmark NbX. Please use equivalent or better docking methods.
 
 2) **NbX was largely unable to model a single classification threshold that can generally applied to all tested Nb-Ag complexes to distinguish non-native-like (0) or native-like (1) Nb-Ag complex structures.**
 
