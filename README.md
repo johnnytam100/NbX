@@ -101,7 +101,7 @@ step 2 : `sh RosettaDock.sh`
 
     * We used Nb-Ag complex structures from ClusPro -> RosettaDock full-atom refinement to benchmark NbX. Please use equivalent or better docking methods.
 
-2) **NbX is largely unable to model a single classification threshold that can generally applied to all tested Nb-Ag complexes to distinguish non-native-like (0) or native-like (1) Nb-Ag complex structures.**
+2) **NbX is largely unable to model a single classification threshold that generally applies to all tested Nb-Ag complexes to distinguish non-native-like (0) or native-like (1) Nb-Ag complex structures.**
 
 
     **Take action:** 
