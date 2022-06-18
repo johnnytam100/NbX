@@ -42,7 +42,7 @@ Change the following paths inside `NbX_feature_prep.py`
 ## Step 3 : renumber nanobody
 Before any docking, please renumber your nanobody with PyIgClassify (http://dunbrack2.fccc.edu/pyigclassify/)
 
-If your Nb (or Nb-Ag) structure is confidential and you don't want to submit to a webserver: 
+If your Nb (or Nb-Ag complex) structure is confidential and you don't want to submit to a webserver: 
 
 modify the CDRs start and end residue numbers (search `"CDR1_start_residue"`) inside `NbX_feature_prep.py`.
 
