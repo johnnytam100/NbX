@@ -12,7 +12,7 @@ Tam, C.; Kumar, A.; Zhang, K.Y.J. NbX: Machine Learning-Guided Re-Ranking of Nan
 
 The five models inside the `model` folder are the  XGBoost models shown on Figure 1 of our NbX paper.
 
-(i.e. the 5-fold validated model trained and tested on Nb-Ag complexes where pairwise Ag structural alignment quality score < 0.9 to minimize train-test information leakage).
+(i.e. the 5-fold validated models trained and tested on Nb-Ag complexes where pairwise Ag structural alignment quality score < 0.9 to minimize train-test information leakage).
 
 | Model | PR-AUC |
 | ------------- | ------------- |
