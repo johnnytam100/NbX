@@ -30,7 +30,7 @@ To run an example: do [step1](https://github.com/johnnytam100/NbX#step-1--instal
 
 To run with your Nb-Ag complex structures: start from [step1](https://github.com/johnnytam100/NbX#step-1--install-pre-requisites).
 
-## Step 1 : install pre-requisites
+## Step 1 : install pre-requisites and clone
 
 PyRosetta (https://www.pyrosetta.org/downloads)
 
@@ -49,6 +49,8 @@ Rosetta (optional, https://new.rosettacommons.org/demos/latest/tutorials/install
 `pip install joblib==1.1.0`
 
 `pip install dill==0.3.5.1`
+
+`git clone https://github.com/johnnytam100/NbX.git`
 
 ## Step 2 : change paths
 
