@@ -58,21 +58,24 @@ Change the following paths inside `NbX_feature_prep.py`
 
 
 ## Step 3 : renumber nanobody
+
 Before any docking, please renumber your nanobody with PyIgClassify (http://dunbrack2.fccc.edu/pyigclassify/)
 
 If your Nb (or Nb-Ag complex) structure is confidential and you don't want to submit to a webserver: 
 
 modify the CDRs start and end residue numbers (search `"CDR1_start_residue"`) inside `NbX_feature_prep.py`.
 
+## Step 4 : copy your Nb-Ag complex structures to `run_NbX` folder
 
-## Step 4 : change directory, copy
+`cp (path to your Nb-Ag complex structures .pdb) ./run_NbX`
+
+## Step 5 : change directory
 
 `cd run_NbX`
 
 `cp -r ../model ../NbX_feature_prep.py ../aaDescriptors.csv ../NbX_predict.py ./`
 
-
-## Step 5 : feature preparation
+## Step 6 : feature preparation
 
 ### (option 1,  without DockQ)
 
@@ -83,12 +86,12 @@ modify the CDRs start and end residue numbers (search `"CDR1_start_residue"`) in
 `python NbX_feature_prep.py --antigen_chain A --antibody_chain H --native 6oq8_complex.pdb`
 
 
-## Step 6 : predict
+## Step 7 : predict
 
 `python NbX_predict.py`
 
 
-## Step 7 : analyze results
+## Step 8 : analyze results
 
 **Important concept in NbX re-ranking:**
 
