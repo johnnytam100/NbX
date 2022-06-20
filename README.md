@@ -56,7 +56,7 @@ modify the CDRs start and end residue numbers (search `"CDR1_start_residue"`) in
 `cp -r ../model ../NbX_feature_prep.py ../aaDescriptors.csv ../NbX_predict.py ./`
 
 
-## Step 5 : feature prep
+## Step 5 : feature preparation
 
 ### (option 1,  without DockQ)
 
@@ -83,7 +83,7 @@ Descendingly sort the `mean_predicted_CAPRI_binary_proba` in `NbX_prediction.csv
 
 # RosettaDock (optional)
 
-To mimic the NbX benchmark setting, you can perform RosettaDock refinement of your Nb-Ag complex structures before feature prediction.
+To mimic the NbX benchmark setting, you can perform RosettaDock refinement of your Nb-Ag complex structures before feature preparation.
 
 step 1 : change `ROSETTA_PATH` in `RosettaDock.sh` to your Rosetta path.
 
@@ -110,7 +110,7 @@ step 2 : `sh RosettaDock.sh`
 
     * Do consider top ranks as more probable native-like Nb-Ag complex structures compared to the lower ranks.
 
-    * Avoid using a single classification threshold of the absolute value of the probablity as non-native-like (0) or native-like (1) among unrelated Nb-Ag pairs.
+    * Avoid using a single classification threshold of the absolute value of the probablity to distinguish non-native-like (0) or native-like (1) among unrelated Nb-Ag pairs.
 
     * Avoid comparing the absolute values of the probablity among unrelated Nb-Ag pairs.
 
