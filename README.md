@@ -26,9 +26,9 @@ The five models inside the `model` folder are the  XGBoost models shown on Figur
 
 # How to run NbX
 
-To run an example: do [step1](https://github.com/johnnytam100/NbX#step-1--install-pre-requisites), [step2](https://github.com/johnnytam100/NbX#step-2--change-paths) then go directly to [step5](https://github.com/johnnytam100/NbX#step-5--change-directory)
+To run an example: do [step1](https://github.com/johnnytam100/NbX#step-1--install-pre-requisites), [step2](https://github.com/johnnytam100/NbX#step-2--change-paths) then go directly to [step5](https://github.com/johnnytam100/NbX#step-5--change-directory).
 
-To run with your Nb-Ag complex structures: start from [step1](https://github.com/johnnytam100/NbX#step-1--install-pre-requisites)
+To run with your Nb-Ag complex structures: start from [step1](https://github.com/johnnytam100/NbX#step-1--install-pre-requisites).
 
 ## Step 1 : install pre-requisites
 
