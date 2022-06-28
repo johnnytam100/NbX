@@ -56,7 +56,7 @@ To run with your Nb-Ag complex structures: start from [step1](https://github.com
 
 
 
-* **Secondly, in the environment, manually install...**
+* **Secondly, in the activated `nbx` environment, manually install...**
 
    (1) PyRosetta (https://www.pyrosetta.org/downloads)
 
@@ -74,6 +74,7 @@ To run with your Nb-Ag complex structures: start from [step1](https://github.com
 Change the following paths inside `NbX_feature_prep.py`
 
 `path_to_python = "/home/cltam/anaconda3/envs/nbx/bin/python"`
+* Get this path inside the activated `nbx` environment with the command `which python`
 
 `path_to_foldx = "/data/cltam/script/FoldX/foldx_20221231"`
 
