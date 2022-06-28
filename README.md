@@ -58,7 +58,7 @@ which should have the following libraries installed
 
 (1) PyRosetta (https://www.pyrosetta.org/downloads)
 
-* NbX was tested with installtion with `pyrosetta-2022.23+release.f1e0f6d7bf7-cp38-cp38-linux_x86_64.whl`
+* NbX was tested on PyRosetta installation with `pyrosetta-2022.23+release.f1e0f6d7bf7-cp38-cp38-linux_x86_64.whl`
 
 (2) FoldX (https://foldxsuite.crg.eu/)
 
