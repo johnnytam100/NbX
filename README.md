@@ -38,7 +38,7 @@ To run with your Nb-Ag complex structures: start from [step1](https://github.com
 
 `conda activate nbx`
 
-which should the following installed
+which should have the following libraries installed
 
 `pip install biopandas==0.4.1`
 
