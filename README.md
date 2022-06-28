@@ -41,10 +41,16 @@ To run with your Nb-Ag complex structures: start from [step1](https://github.com
 which should the following installed
 
 `pip install biopandas==0.4.1`
+
 `pip install xgboost==0.90`
+
 `pip install scikit-learn==0.22.2.post1`
+
 `pip install joblib==1.1.0`
+
 `pip install dill==0.3.5.1`
+
+
 
 Then, manually install the following
 
