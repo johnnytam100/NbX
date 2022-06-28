@@ -30,9 +30,25 @@ To run an example: do [step1](https://github.com/johnnytam100/NbX#step-1--instal
 
 To run with your Nb-Ag complex structures: start from [step1](https://github.com/johnnytam100/NbX#step-1--install-pre-requisites).
 
-## Step 1 : install pre-requisites and clone
+## Step 1 : clone and create environment
 
-PyRosetta (https://www.pyrosetta.org/downloads)
+`git clone https://github.com/johnnytam100/NbX.git`
+
+`conda env create -f NbX/environment.yml`
+
+`conda activate nbx`
+
+which should the following installed
+
+`pip install biopandas==0.4.1`
+`pip install xgboost==0.90`
+`pip install scikit-learn==0.22.2.post1`
+`pip install joblib==1.1.0`
+`pip install dill==0.3.5.1`
+
+Then, manually install the following
+
+PyRosetta (https://www.pyrosetta.org/downloads, NbX was tested with installtion with `pyrosetta-2022.23+release.f1e0f6d7bf7-cp38-cp38-linux_x86_64.whl`)
 
 FoldX (https://foldxsuite.crg.eu/)
 
@@ -40,17 +56,6 @@ DockQ (optional, https://github.com/bjornwallner/DockQ)
 
 Rosetta (optional, https://new.rosettacommons.org/demos/latest/tutorials/install_build/install_build)
 
-`pip install biopandas==0.4.1`
-
-`pip install xgboost==0.90`
-
-`pip install scikit-learn==0.22.2.post1`
-
-`pip install joblib==1.1.0`
-
-`pip install dill==0.3.5.1`
-
-`git clone https://github.com/johnnytam100/NbX.git`
 
 ## Step 2 : change paths
 
