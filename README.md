@@ -32,39 +32,39 @@ To run with your Nb-Ag complex structures: start from [step1](https://github.com
 
 ## Step 1 : clone and create environment
 
-**Firstly, do**
+* **Firstly, do...**
 
-`git clone https://github.com/johnnytam100/NbX.git`
+   `git clone https://github.com/johnnytam100/NbX.git`
 
-`conda env create -f NbX/environment.yml`
+   `conda env create -f NbX/environment.yml`
 
-`conda activate nbx`
+   `conda activate nbx`
 
-which should have the following libraries installed
+   which should have the following libraries installed
 
-`pip install biopandas==0.4.1`
+   `pip install biopandas==0.4.1`
 
-`pip install xgboost==0.90`
+   `pip install xgboost==0.90`
 
-`pip install scikit-learn==0.22.2.post1`
+   `pip install scikit-learn==0.22.2.post1`
 
-`pip install joblib==1.1.0`
+   `pip install joblib==1.1.0`
 
-`pip install dill==0.3.5.1`
+   `pip install dill==0.3.5.1`
 
 
 
-**Secondly, manually install in the environment**
+* **Secondly, in the environment, manually install...**
 
-(1) PyRosetta (https://www.pyrosetta.org/downloads)
+   (1) PyRosetta (https://www.pyrosetta.org/downloads)
 
-* NbX was tested on PyRosetta installation with `pyrosetta-2022.23+release.f1e0f6d7bf7-cp38-cp38-linux_x86_64.whl`
+   * NbX was tested on PyRosetta installation with `pyrosetta-2022.23+release.f1e0f6d7bf7-cp38-cp38-linux_x86_64.whl` from [here](https://graylab.jhu.edu/download/PyRosetta4/archive/release/)
 
-(2) FoldX (https://foldxsuite.crg.eu/)
+   (2) FoldX (https://foldxsuite.crg.eu/)
 
-(3) DockQ (optional, https://github.com/bjornwallner/DockQ)
+   (3) DockQ (optional, https://github.com/bjornwallner/DockQ)
 
-(4) Rosetta (optional, https://new.rosettacommons.org/demos/latest/tutorials/install_build/install_build)
+   (4) Rosetta (optional, https://new.rosettacommons.org/demos/latest/tutorials/install_build/install_build)
 
 
 ## Step 2 : change paths
