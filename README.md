@@ -35,8 +35,10 @@ To run with your Nb-Ag complex structures: start from [step1](https://github.com
 * **Firstly, do...**
 
    `git clone https://github.com/johnnytam100/NbX.git`
+   
+   `cd NbX`
 
-   `conda env create -f NbX/environment.yml`
+   `conda env create -f environment.yml`
 
    `conda activate nbx`
 
