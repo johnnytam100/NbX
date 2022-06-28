@@ -54,7 +54,7 @@ which should have the following libraries installed
 
 
 
-**Secondly, manually install**
+**Secondly, manually install in the environment**
 
 (1) PyRosetta (https://www.pyrosetta.org/downloads)
 
